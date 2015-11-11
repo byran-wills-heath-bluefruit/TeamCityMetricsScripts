@@ -10,11 +10,13 @@ set APP=%APP% %2
 shift
 goto passing_parameters
 
+
 :calculate_coverage
 cd "%CURRENT_DIRECTORY%"
-opencppcoverage --sources %SOURCES% --export_type=cobertura -- %APP%
+del Coverage.xml
+opencppcoverage --sources %SOURCES% --export_type=cobertura:Coverage.xml -- %APP%
 
 cd "%CURRENT_DIRECTORY%"
-..\xslconvert "CoverageTestCoverage.xml" CoverageToTeamCity.xslt Coverage.txt
+..\xslconvert "Coverage.xml" CoverageToTeamCity.xslt Coverage.txt
 
 type Coverage.txt
