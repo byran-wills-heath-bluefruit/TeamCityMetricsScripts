@@ -1,0 +1,16 @@
+For TeamCity > Version 9 add the following to the "<TeamCity Data Directory>/config/main-config.xml" file
+
+<build-metrics>
+	<statisticValue key="SM_Lines" description="SourceMonitor - Lines"/>
+	<statisticValue key="SM_Statements" description="SourceMonitor - Statements"/>
+	<statisticValue key="SM_Percent_Comment_Lines" description="SourceMonitor - Percent Comment Lines"/>
+	<statisticValue key="SM_Percent_Documentation_Lines" description="SourceMonitor - Percent Documentation Lines"/>
+	<statisticValue key="SM_Classes,_Interfaces,_Structs" description="SourceMonitor - Classes, Interfaces, Structs"/>
+	<statisticValue key="SM_Methods_per_Class" description="SourceMonitor - Methods per Class"/>
+	<statisticValue key="SM_Calls_per_Method" description="SourceMonitor - Calls per Method"/>
+	<statisticValue key="SM_Statements_per_Method" description="SourceMonitor - Statements per Method"/>
+	<statisticValue key="SM_Maximum_Complexity" description="SourceMonitor - Maximum Complexity"/>
+	<statisticValue key="SM_Maximum_Block_Depth" description="SourceMonitor - Maximum Block Depth"/>
+	<statisticValue key="SM_Average_Block_Depth" description="SourceMonitor - Average Block Depth"/>
+	<statisticValue key="SM_Average_Complexity" description="SourceMonitor - Average Complexity"/>
+</build-metrics>

@@ -13,7 +13,7 @@
     <xsl:variable name="totalMetrics" select="count(/sourcemonitor_metrics/project/metric_names/metric_name)" />
 
     <xsl:for-each select="/sourcemonitor_metrics/project/metric_names/metric_name">
-      <xsl:text>##teamcity[buildStatisticValue key='</xsl:text>
+      <xsl:text>##teamcity[buildStatisticValue key='SM_</xsl:text>
       <xsl:value-of select="translate(current(), ' ', '_')"/>
       <xsl:text>' value='</xsl:text>
       <xsl:variable name="id" select="@id"/>
