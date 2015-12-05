@@ -19,5 +19,16 @@
     <xsl:text>']</xsl:text>
     <xsl:value-of select="$nl"/>
 
+    <!-- TeamCity built in coverage -->
+    <xsl:text>##teamcity[buildStatisticValue key='CodeCoverageAbsLTotal' value='</xsl:text>
+    <xsl:value-of select="$total_lines"/>
+    <xsl:text>']</xsl:text>
+    <xsl:value-of select="$nl"/>
+
+    <xsl:text>##teamcity[buildStatisticValue key='CodeCoverageAbsLCovered' value='</xsl:text>
+    <xsl:value-of select="$covered_lines"/>
+    <xsl:text>']</xsl:text>
+    <xsl:value-of select="$nl"/>
+
   </xsl:template>
 </xsl:stylesheet>
