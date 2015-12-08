@@ -2,13 +2,15 @@
 
 IF DEFINED ProgramFiles(x86) GOTO :64Bit
 
-SET PROGRAM_FILES_32BIT=%ProgramFiles%
-SET PROGRAM_FILES_64BIT=%ProgramFiles%
+echo 32-bit Operating System
+SET PROGRAM_FILES_32BIT=C:\Program Files
+SET PROGRAM_FILES_64BIT=C:\Program Files
 GOTO :ProgramFilesSet
 
 :64Bit
-SET PROGRAM_FILES_32BIT=%ProgramFiles(x86)%
-SET PROGRAM_FILES_64BIT=%ProgramFiles%
+echo 64-bit Operating System
+SET PROGRAM_FILES_32BIT=C:\Program Files (x86)
+SET PROGRAM_FILES_64BIT=C:\Program Files
 
 :ProgramFilesSet
 
