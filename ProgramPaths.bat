@@ -17,3 +17,4 @@ set VSTEST_2013="%PROGRAM_FILES_32BIT%\Microsoft Visual Studio 12.0\Common7\IDE\
 set DEVENV_2013="%PROGRAM_FILES_32BIT%\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
 set OPENCOVER="%PROGRAM_FILES_32BIT%\OpenCover\OpenCover.Console.exe"
 set SEVENZIP="%PROGRAM_FILES_64BIT%\7-Zip\7z.exe"
+set CPPCHECK="%PROGRAM_FILES_64BIT%\CppCheck\CppCheck.exe"
